@@ -1,6 +1,6 @@
 name: starter
 services:
-  devcontainer:
+  starter-devcontainer:
     container_name: starter-devcontainer
     build:
       context: .
@@ -8,7 +8,7 @@ services:
     volumes:
       - ./:/workspace:rw
     environment:
-      - AUTH0_DOMAIN=${AUTH0_DOMAIN}
-      - AUTH0_AUDIENCE=${AUTH0_AUDIENCE}
+      AUTH0_DOMAIN: ${AUTH0_DOMAIN:-default-auth0-domain}
+      AUTH0_AUDIENCE: ${AUTH0_AUDIENCE:-default-auth0-audience}    
     command: sleep infinity
 
