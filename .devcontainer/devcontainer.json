@@ -1,8 +1,8 @@
 {
-    "name": "devcontainer_starter",
+    "name": "starter",
     "workspaceFolder": "/workspace",
     "dockerComposeFile": "../docker-compose.yml",
-    "service": "devcontainer",
+    "service": "starter-devcontainer",
     "customizations": {
       "vscode": {
         "settings": {
