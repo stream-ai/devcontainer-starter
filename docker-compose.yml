@@ -1,7 +1,7 @@
-name: huddle
+name: starter
 services:
   devcontainer:
-    container_name: devcontainer
+    container_name: starter-devcontainer
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
